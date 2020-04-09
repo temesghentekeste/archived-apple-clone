@@ -111,7 +111,33 @@ input::placeholder {
 
 .footer {
   grid-area: footer;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 90px;
+  width: 940px;
+  margin: 0 auto;
+  border: 1px solid #4c4c4c;
 }
+
+.footer-left {
+  background:red;
+  color: white;
+}
+
+.footer-right {
+  background: blue;
+  color: black;
+
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  justify-items: start;
+
+  font-size: 10px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+
 
 nav > a:hover {
   cursor: pointer;
