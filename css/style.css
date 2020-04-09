@@ -1,7 +1,30 @@
+:root {
+  --white-color: #fff;
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana,
+    sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.875rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+  font-weight: 100;
+  transform: scale(1, 2.2);
+  letter-spacing: 0.4rem;;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
 }
 
 .container {
@@ -13,20 +36,78 @@
 
   grid-auto-rows: 7fr 3fr 1fr;
   height: 100vh;
-  margin:0 161px;
+  margin: 0 161px;
   /* border: 10px solid black; */
 }
 
 .header {
   grid-area: header;
-  
-  background: url(https://archive.fo/UW4oR/c737ac2a39d31e8407c5d08a73daddc5ddcf5d3e.jpg) no-repeat 22% 100%/cover;
-    
+
+  background: url(https://archive.fo/UW4oR/c737ac2a39d31e8407c5d08a73daddc5ddcf5d3e.jpg)
+    no-repeat 22% 100% / cover;
+
+   
 }
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(8, 102px) 132px;
+  grid-auto-rows: 30px;
+  justify-items: stretch;
+  align-items: center;
+  text-align: center;
+  width: 940px;
+  margin: 0 auto;
+  margin-top: 120px;
+
+  background-image: url(https://archive.fo/UW4oR/959dc37b1b6692997a6d3ab19862dd59e5e83ecf.png);
+  border-radius: 4px;
+  background: -webkit-gradient( linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.2)), color-stop(0.05, rgba(0, 0, 0, 0)), color-stop(0.97, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.45)) ), -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0.2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2))), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFW…px%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC) no-repeat 50% 50%, -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
+  box-shadow: 0.2px 0.4px;
+  border: 1px solid #4c4c4c;
+}
+
+nav > a {
+  border-right: 1px solid black;
+  display: block;
+  height: 100%;
+}
+
+input {
+  display: inline-block;
+  width: 110px;
+  margin-left: .3rem;
+  border-radius: 4px;
+  border: none;
+  height: 20px;
+  background-color: transparent;
+  border:1px solid black;
+  color:var(--white-color)
+  
+}
+
+input::placeholder { 
+  font-size:.6rem; 
+  color:var(--white-color);
+  margin-left: 0.7rem;
+}
+
 .showcase {
   grid-area: showcase;
 }
 
 .footer {
   grid-area: footer;
+}
+
+nav > a:hover {
+  cursor: pointer;
+}
+
+.header-text{
+  margin-top: 4rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
