@@ -14,12 +14,14 @@
   grid-auto-rows: 7fr 3fr 1fr;
   height: 100vh;
   margin:0 161px;
-  border: 10px solid black;
+  /* border: 10px solid black; */
 }
 
 .header {
   grid-area: header;
-  border: 1px solid red;
+  
+  background: url(https://archive.fo/UW4oR/c737ac2a39d31e8407c5d08a73daddc5ddcf5d3e.jpg) no-repeat 22% 100%/cover;
+    
 }
 .showcase {
   grid-area: showcase;
