@@ -105,13 +105,12 @@ input::placeholder {
 }
 
 .showcase img {
-  width:100%;
+  width: 100%;
   height: 100%;
 }
 
 .footer {
   grid-area: footer;
-
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 90px;
@@ -121,23 +120,18 @@ input::placeholder {
 }
 
 .footer-left {
-  background:red;
+  background: red;
   color: white;
 }
 
 .footer-right {
   background: blue;
   color: black;
-
   display: grid;
-  grid-template-columns: repeat(8, auto);
+  grid-auto-flow: column;
   justify-items: start;
-
   font-size: 10px;
-  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
 }
-
-
 
 nav > a:hover {
   cursor: pointer;
