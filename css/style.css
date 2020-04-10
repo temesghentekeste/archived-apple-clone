@@ -1,5 +1,7 @@
 :root {
   --white-color: #fff;
+  --blue-color: #0088cc;
+  --dark-color: #6e6e6e;
 }
 
 * {
@@ -116,6 +118,11 @@ input::placeholder {
   margin: 0 auto;
   border: 1px solid #4c4c4c;
   font-size: 10px;
+  color:var(--dark-color);
+}
+
+.footer a {
+  color: var(--blue-color);
 }
 
 .footer-left {
@@ -134,6 +141,14 @@ input::placeholder {
   display: grid;
   grid-auto-flow: column;
   justify-items: start;
+  align-items: start;
+}
+
+.footer-right a::after {
+  content: " ";
+  padding: 0 0.1rem;
+  height: 10px;
+  border-right: 1px solid #6e6e6e;
 }
 
 nav > a:hover {
