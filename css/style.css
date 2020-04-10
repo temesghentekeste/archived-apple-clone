@@ -47,8 +47,8 @@ a {
 
 nav {
   position: absolute;
-  top: 115px;
-  left: 131px;
+  top: 68px;
+  left: 180px;
   display: grid;
   grid-template-columns: repeat(9, minmax(102px, auto));
   grid-auto-flow: column;
@@ -110,7 +110,7 @@ input:focus {
 .header-image-links {
   position: absolute;
   top: 150px;
-  right: 100px;
+  right: 242px;
 }
 
 .header-text p {
