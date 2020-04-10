@@ -26,8 +26,7 @@ a {
     'header header header'
     'showcase showcase showcase'
     'footer footer footer';
-  grid-auto-rows: 500px 3fr 1fr;
-  height: 100vh;
+  grid-auto-rows: 500px auto auto;
   margin: 0 161px;
 }
 
@@ -101,12 +100,11 @@ input::placeholder {
   grid-area: showcase;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 200px;
 }
 
 .showcase img {
   width: 100%;
-  height: 100%;
+  height:100%;
 }
 
 .footer {
@@ -117,12 +115,22 @@ input::placeholder {
   width: 940px;
   margin: 0 auto;
   border: 1px solid #4c4c4c;
+  font-size: 10px;
 }
 
 .footer-left {
   background: red;
   color: white;
+  display: grid;
 }
+
+.footer-left .copyright {
+  display: grid;
+  grid-auto-flow: column;
+
+}
+
+
 
 .footer-right {
   background: blue;
@@ -130,7 +138,6 @@ input::placeholder {
   display: grid;
   grid-auto-flow: column;
   justify-items: start;
-  font-size: 10px;
 }
 
 nav > a:hover {
