@@ -170,5 +170,11 @@ input::placeholder {
 }
 
 nav > a:hover {
-  cursor: pointer;
+  background: 
+    linear-gradient(
+      rgba(97, 94, 94, 0.45),
+      rgba(80, 80, 80, 0.45)
+    ),
+
+      url(https://archive.fo/UW4oR/959dc37b1b6692997a6d3ab19862dd59e5e83ecf.png);
 }
