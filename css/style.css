@@ -35,16 +35,12 @@ a {
     'footer footer footer';
   grid-auto-rows: 500px auto auto;
   margin: 0 161px;
-  height: 100vh;
 }
 
 .header {
   grid-area: header;
   justify-content: center;
   position: relative;
-
-  ;
-  border: 1px solid green;
 }
 
 .header a.header-link {
@@ -57,7 +53,7 @@ a {
 
 nav {
   position: absolute;
-  top: 23%;
+  top: 12%;
   left: 108.6px;
   display: grid;
   grid-template-columns: repeat(9, minmax(102px, auto));
