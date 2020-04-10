@@ -216,3 +216,26 @@ nav > a:hover {
     margin: 0 auto;
   }
 }
+@media (min-width: 2500px) {
+
+ 
+
+  .header a.header-link {
+    height: 100%;
+    background: url(https://archive.fo/UW4oR/c737ac2a39d31e8407c5d08a73daddc5ddcf5d3e.jpg)
+      no-repeat 22% 100% / cover;
+  }
+  nav {
+    top: 68px;
+    left: 180x;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(9, minmax(90px, auto));
+  }
+
+  .header-image-links {
+    top: 75px;
+    right: 246px;
+    margin: 0 auto;
+  }
+}
