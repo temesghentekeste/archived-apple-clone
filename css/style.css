@@ -17,15 +17,14 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--white-color);
 }
 
 .container {
   display: grid;
   grid-template-areas:
-    'header header header'
-    'showcase showcase showcase'
-    'footer footer footer';
+  'header header header'
+  'showcase showcase showcase'
+  'footer footer footer';
   grid-auto-rows: 500px auto auto;
   margin: 0 161px;
 }
@@ -55,6 +54,7 @@ nav > a {
   border-right: 1px solid black;
   display: block;
   height: 100%;
+  color: var(--white-color);
 }
 
 input {
@@ -110,8 +110,8 @@ input::placeholder {
 .footer {
   grid-area: footer;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 90px;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-auto-flow: column;
   width: 940px;
   margin: 0 auto;
   border: 1px solid #4c4c4c;
@@ -119,8 +119,6 @@ input::placeholder {
 }
 
 .footer-left {
-  background: red;
-  color: white;
   display: grid;
 }
 
@@ -133,8 +131,6 @@ input::placeholder {
 
 
 .footer-right {
-  background: blue;
-  color: black;
   display: grid;
   grid-auto-flow: column;
   justify-items: start;
