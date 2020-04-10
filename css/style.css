@@ -34,12 +34,21 @@ a {
 
 .header {
   grid-area: header;
+  justify-content: center;
+  position: relative;
+}
+
+.header a.header-link {
+  display: block;
+  height: 100%;
   background: url(https://archive.fo/UW4oR/c737ac2a39d31e8407c5d08a73daddc5ddcf5d3e.jpg)
     no-repeat 22% 100% / cover;
-  justify-content: center;
 }
 
 nav {
+  position: absolute;
+  top: 115px;
+  left: 108.6px;
   display: grid;
   grid-template-columns: repeat(8, 102px) 132px;
   grid-auto-rows: 30px;
@@ -48,7 +57,6 @@ nav {
   text-align: center;
   width: 940px;
   margin: 0 auto;
-  margin-top: 120px;
   background-image: url(https://archive.fo/UW4oR/959dc37b1b6692997a6d3ab19862dd59e5e83ecf.png);
   border-radius: 4px;
   border: 1px solid #4c4c4c;
@@ -79,7 +87,9 @@ input::placeholder {
 }
 
 .header-image-links {
-  margin-top: 1.5rem;
+  position: absolute;
+  top: 150px;
+  right: 100px;
 }
 
 .header-text p {
@@ -156,7 +166,7 @@ input::placeholder {
 }
 
 .footer-right .footer-icon a::after {
-  display:none;
+  display: none;
 }
 
 nav > a:hover {
