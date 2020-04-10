@@ -20,7 +20,7 @@ In this project, I made the use of semantic HTML, CSS Grids, Keyframes, and back
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/temesghentekeste/archived-apple-clone/d32149f4051c13ffdcd225c8e907c6e029b9178c/index.html)
+[Live Demo Link](https://rawcdn.githack.com/temesghentekeste/archived-apple-clone/c65adca208e6987299231a0b6beae663970ac398/index.html)
 
 ## Getting Started
 
