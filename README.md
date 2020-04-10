@@ -1,6 +1,6 @@
 # Archived Apple Home Page Clone
 
-> This project consists of building a web page using images as a background and adding gradients to elements. The objective is to make a clone that matches the appearance an old version of the Apple website homepage. It is a solo project which was developed as a requirement for Microverse HTML and CSS course on the topic  Building with Backgrounds and Gradients.
+> This project consists of building a web page using images as a background and adding gradients to elements. The objective is to make a clone that matches the appearance an old version of the Apple website homepage. It is a solo project which was developed as a requirement for Microverse HTML and CSS course on the topic Building with Backgrounds and Gradients.
 
 ![screenshot](./images/app_screenshot.png)
 
@@ -15,8 +15,8 @@ In this project, I made the use of semantic HTML, CSS Grids, Keyframes, and back
 
 ## IDE and Tools
 
- - Visual Studio Code
- - Linter
+- Visual Studio Code
+- Linter
 
 ## Live Demo
 
@@ -62,4 +62,5 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](lic.url) licensed.
+
 # archived-apple-clone
