@@ -54,7 +54,7 @@ a {
 nav {
   position: absolute;
   top: 12%;
-  left: 108.6px;
+  left: 10%;
   display: grid;
   grid-template-columns: repeat(9, minmax(102px, auto));
   grid-auto-flow: column;
@@ -62,10 +62,10 @@ nav {
   justify-items: stretch;
   align-items: center;
   text-align: center;
-  margin: 0 auto;
   background-image: url(https://archive.fo/UW4oR/959dc37b1b6692997a6d3ab19862dd59e5e83ecf.png);
   border-radius: 4px;
   border: 1px solid #4c4c4c;
+  margin: 0 auto;
 }
 
 nav > a {
