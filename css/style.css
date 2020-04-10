@@ -62,6 +62,7 @@ nav {
   justify-items: stretch;
   align-items: center;
   text-align: center;
+
   /* width: 940px; */
   margin: 0 auto;
   background-image: url(https://archive.fo/UW4oR/959dc37b1b6692997a6d3ab19862dd59e5e83ecf.png);
@@ -84,9 +85,7 @@ input {
   border: none;
   height: 20px;
   background-color: transparent;
-  border: 1px solid #999;
   color: var(--white-color);
-  height: 19px;
 }
 
 input::placeholder {
