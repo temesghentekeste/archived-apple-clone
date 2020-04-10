@@ -35,6 +35,7 @@ a {
     'footer footer footer';
   grid-auto-rows: 500px auto auto;
   margin: 0 161px;
+  height: 100vh;
 }
 
 .header {
