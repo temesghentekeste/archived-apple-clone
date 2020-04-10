@@ -53,8 +53,8 @@ a {
 
 nav {
   position: absolute;
-  top: 12%;
-  left: 10%;
+  top: 115px;
+  left: 131px;
   display: grid;
   grid-template-columns: repeat(9, minmax(102px, auto));
   grid-auto-flow: column;
