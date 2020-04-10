@@ -41,6 +41,9 @@ a {
   grid-area: header;
   justify-content: center;
   position: relative;
+
+  ;
+  border: 1px solid green;
 }
 
 .header a.header-link {
@@ -53,7 +56,7 @@ a {
 
 nav {
   position: absolute;
-  top: 115px;
+  top: 23%;
   left: 108.6px;
   display: grid;
   grid-template-columns: repeat(9, minmax(102px, auto));
@@ -62,8 +65,6 @@ nav {
   justify-items: stretch;
   align-items: center;
   text-align: center;
-
-  /* width: 940px; */
   margin: 0 auto;
   background-image: url(https://archive.fo/UW4oR/959dc37b1b6692997a6d3ab19862dd59e5e83ecf.png);
   border-radius: 4px;
