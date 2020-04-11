@@ -35,7 +35,6 @@ a {
   margin: 0 100px;
 }
 
-
 .header {
   grid-area: header;
   justify-content: center;
@@ -113,7 +112,7 @@ input:focus {
 .header-image-links {
   position: absolute;
   top: 150px;
-  right: 242px;
+  right: 116px;
 }
 
 .header-text p {
@@ -124,14 +123,29 @@ input:focus {
   font-weight: 100;
 }
 
-.sub-title {
-  background-image: url('https://web.archive.org/web/20140301004341im_/http://images.apple.com/home/images/cta_your_verse_27pt.png');
-  background-position: 50% 0;
-  height: 32px;
+.sub-link-lg{
+  background-image: url(https://archive.fo/UW4oR/d7dd20c4365117e1cc1b3c2492508e9ba842e5d5.png);
+  width: 980px;
+  height: 104px;
 }
 
-.sub-title:hover {
-  background-position-y: -32px;
+.sub-title-md {
+  background-image: url(https://archive.fo/UW4oR/98e684c02dfa6d288709a583e375cfbdea4b3f7d.png);
+  background-position: center center;
+  width: 980px;
+  height: 82px;
+}
+
+.sub-title-sm {
+  background-image: url('https://web.archive.org/web/20140301004341im_/http://images.apple.com/home/images/cta_your_verse_27pt.png');
+  background-position: center 0;
+  width: 980px;
+  height: 32px;
+  margin-top: 1.4rem;
+}
+
+.sub-title-sm:hover {
+  background-position-y:-32px;
 }
 
 .showcase {
@@ -172,7 +186,6 @@ input:focus {
 .footer a {
   color: var(--blue-color);
 }
-
 
 .footer-left .copyright {
   grid-auto-flow: column;
