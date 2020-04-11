@@ -29,7 +29,7 @@ a {
     'showcase showcase showcase'
     'footer footer footer';
   grid-auto-rows: 500px auto auto;
-  margin: 0 161px;
+  margin: 0 100px;
 }
 
 .header {
@@ -48,7 +48,7 @@ a {
 nav {
   position: absolute;
   top: 68px;
-  left: 180px;
+  left: 116px;
   display: grid;
   grid-template-columns: repeat(9, minmax(102px, auto));
   grid-auto-flow: column;
@@ -59,7 +59,7 @@ nav {
   background-image: url(https://archive.fo/UW4oR/959dc37b1b6692997a6d3ab19862dd59e5e83ecf.png);
   border-radius: 4px;
   border: 1px solid #4c4c4c;
-  margin: 0 auto;
+  width: 948px;
 }
 
 nav > a {
@@ -209,7 +209,7 @@ nav > a:hover {
   background: linear-gradient(rgba(97, 94, 94, 0.45), rgba(40, 40, 40, 0.45)),
     url(https://archive.fo/UW4oR/959dc37b1b6692997a6d3ab19862dd59e5e83ecf.png);
 }
-
+/* 
 @media (max-width: 1500px) {
   .header a.header-link {
     height: 100%;
@@ -249,4 +249,4 @@ nav > a:hover {
     right: 246px;
     margin: 0 auto;
   }
-}
+} */
