@@ -16,6 +16,8 @@ body {
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 1.875rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
 a {
@@ -32,13 +34,14 @@ a {
     'showcase showcase showcase'
     'footer footer footer';
   grid-auto-rows: 500px auto auto;
-  margin: 0 100px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .header {
   grid-area: header;
   justify-content: center;
-  position: relative;
+  /* position: relative; */
 }
 
 .header a.header-link {
@@ -46,13 +49,12 @@ a {
   height: 100%;
   background: url(https://archive.fo/UW4oR/c737ac2a39d31e8407c5d08a73daddc5ddcf5d3e.jpg)
     no-repeat 22% 100% / cover;
-    width: 100%;
 }
 
 nav {
   position: absolute;
   top: 68px;
-  left: 100.5px;
+  left: 130px;
   grid-template-columns: repeat(auto-fit, minmax(102px, auto));
   grid-auto-flow: column;
   grid-auto-rows: 30px;
@@ -63,7 +65,6 @@ nav {
   border-radius: 4px;
   border: 1px solid #4c4c4c;
   width: 980px;
-  margin: 0 auto;
 }
 
 nav > a {
