@@ -59,7 +59,7 @@ a {
 nav {
   position: absolute;
   top: 64px;
-  left: 260px;
+  left: 260px;  
   grid-template-columns: repeat(auto-fit, minmax(102px, auto));
   grid-auto-flow: column;
   grid-auto-rows: 30px;
