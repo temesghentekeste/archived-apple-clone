@@ -11,12 +11,7 @@
 }
 
 body {
-  font-family:
-    'Lucida Grande',
-    'Lucida Sans Unicode',
-    Helvetica,
-    Arial,
-    Verdana,
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana,
     sans-serif;
   font-weight: 400;
   font-size: 0.75rem;
@@ -53,9 +48,7 @@ a {
 .header a.header-link {
   display: block;
   height: 100%;
-  background:
-    url(https://archive.fo/UW4oR/c737ac2a39d31e8407c5d08a73daddc5ddcf5d3e.jpg)
-    no-repeat 22% 100% / cover;
+  background: url(../images/header-bg.jpg) no-repeat 22% 100% / cover;
 }
 
 nav {
@@ -68,7 +61,7 @@ nav {
   justify-items: stretch;
   align-items: center;
   text-align: center;
-  background-image: url(https://archive.fo/UW4oR/959dc37b1b6692997a6d3ab19862dd59e5e83ecf.png);
+  background-image: url(../images/navbar-bg-image.png);
   border-radius: 4px;
   border: 1px solid #4c4c4c;
   width: 980px;
@@ -122,7 +115,7 @@ input:focus {
 .header-image-links {
   position: absolute;
   top: 150px;
-  right: 116px;
+  left: 116px;
 }
 
 .header-text p {
@@ -134,20 +127,21 @@ input:focus {
 }
 
 .sub-link-lg {
-  background-image: url(https://archive.fo/UW4oR/d7dd20c4365117e1cc1b3c2492508e9ba842e5d5.png);
+  background-image: url(../images/sub-title-lg-bg.png);
   width: 980px;
   height: 104px;
+
 }
 
 .sub-title-md {
-  background-image: url(https://archive.fo/UW4oR/98e684c02dfa6d288709a583e375cfbdea4b3f7d.png);
+  background-image: url(../images/sub-title-md-bg.png);
   background-position: center center;
   width: 980px;
   height: 82px;
 }
 
 .sub-title-sm {
-  background-image: url('https://web.archive.org/web/20140301004341im_/http://images.apple.com/home/images/cta_your_verse_27pt.png');
+  background-image: url(../images/sub-title-sm-bg.png);
   background-position: center 0;
   width: 980px;
   height: 32px;
@@ -165,25 +159,19 @@ input:focus {
 }
 
 .showcase .first {
-  background:
-    url(https://archive.fo/UW4oR/4199f096e33e638ba9aeb6c6dec3a3e64794d02c.jpg)
-    no-repeat center center/cover;
+  background: url(../images/showcase-first.jpg) no-repeat center center/cover;
 }
 
 .showcase .second {
-  background:
-    url(https://archive.fo/UW4oR/6032fe46fd16493ddda4e90ae45725962fc826b9.jpg)
-    no-repeat center center/cover;
+  background: url(../images/showcase-second.jpg) no-repeat center center/cover;
 }
 
 .showcase .third {
-  background:
-    url(https://archive.fo/UW4oR/307a4ef1971d63d523c362cc3e49f923549fcefc.jpg)
-    no-repeat center center/cover;
+  background: url(../images/showcase-third.jpg) no-repeat center center/cover;
 }
 
 .showcase .fourth {
-  background: url(https://archive.fo/UW4oR/ec67ffeb084d1b9c83687205641697baa4122bee.jpg);
+  background: url(../images/showcase-fourth.jpg);
 }
 
 .footer {
@@ -228,7 +216,6 @@ input:focus {
 }
 
 nav > a:hover {
-  background:
-    linear-gradient(rgba(97, 94, 94, 0.45), rgba(40, 40, 40, 0.45)),
-    url(https://archive.fo/UW4oR/959dc37b1b6692997a6d3ab19862dd59e5e83ecf.png);
+  background: linear-gradient(rgba(97, 94, 94, 0.45), rgba(40, 40, 40, 0.45)),
+    url(../images/navbar-bg-image.png);
 }
