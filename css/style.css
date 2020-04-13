@@ -82,24 +82,30 @@ nav > a {
   color: var(--white-color);
 }
 
-input {
+.search {
+  position: relative;
+}
+
+.search input {
   display: inline-block;
-  width: 110px;
-  margin: 0 0.3rem;
+  margin: 0 0.5rem;
   border-radius: 4px;
   border: none;
+  width: 110px;
   height: 20px;
   background-color: transparent;
   color: var(--white-color);
+  text-indent: 1.25rem;
 }
 
-input::placeholder {
-  font-size: 0.6rem;
-  color: var(--white-color);
-  margin-left: 0.7rem;
+.search span {
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  left: 15px;
 }
 
-input:focus {
+.search input:focus {
   outline: none;
   animation: search-focused;
   animation-duration: 0.3s;
@@ -109,14 +115,11 @@ input:focus {
 @keyframes search-focused {
   0% {
     background-color: var(--white-color);
-    opacity: 0.1;
   }
 
   100% {
     background-color: #999;
     width: 150px;
-    margin-right: 0.3rem;
-    opacity: 1;
   }
 }
 
