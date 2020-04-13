@@ -1,0 +1,231 @@
+:root {
+  --white-color: #fff;
+  --blue-color: #08c;
+  --dark-color: #6e6e6e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    'Lucida Grande',
+    'Lucida Sans Unicode',
+    Helvetica,
+    Arial,
+    Verdana,
+    sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.875rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
+}
+
+.container {
+  grid-template-areas:
+    'header header header'
+    'showcase showcase showcase'
+    'footer footer footer';
+  grid-auto-rows: 500px auto auto;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header {
+  grid-area: header;
+  justify-content: center;
+}
+
+.header a.header-link {
+  display: block;
+  height: 100%;
+  background: url(../images/header-bg.jpg) no-repeat 25% 100% / cover;
+  position: relative;
+  background-size: max(70vw, 1300px);
+  margin: auto;
+  top: -290px;
+}
+
+nav {
+  position: relative;
+  top: 87px;
+  z-index: 1;
+  width: 980px;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(102px, auto));
+  grid-auto-flow: column;
+  grid-auto-rows: 30px;
+  justify-items: stretch;
+  align-items: center;
+  text-align: center;
+  background-image: url(../images/navbar-bg-image.png);
+  border-radius: 4px;
+  border: 1px solid #4c4c4c;
+}
+
+nav > a {
+  border-right: 1px solid black;
+  display: block;
+  height: 100%;
+  color: var(--white-color);
+}
+
+.search {
+  position: relative;
+}
+
+.search input {
+  display: inline-block;
+  margin: 0 0.5rem;
+  border-radius: 4px;
+  border: none;
+  width: 110px;
+  height: 20px;
+  background-color: transparent;
+  color: var(--white-color);
+  text-indent: 1.25rem;
+}
+
+.search span {
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.search input:focus {
+  outline: none;
+  animation: search-focused;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes search-focused {
+  0% {
+    background-color: var(--white-color);
+  }
+
+  100% {
+    background-color: #999;
+    width: 150px;
+  }
+}
+
+.header-image-links {
+  position: relative;
+  top: 90px;
+  z-index: 2;
+  margin: 10px auto;
+  width: 100%;
+}
+
+.sub-link-lg,
+.sub-link-md,
+.sub-link-sm {
+  margin: auto;
+  width: 980px;
+}
+
+.sub-link-lg {
+  background-image: url(../images/sub-title-lg-bg.png);
+  height: 104px;
+}
+
+.sub-title-md {
+  background-image: url(../images/sub-title-md-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 82px;
+}
+
+.sub-title-sm {
+  background-image: url(../images/sub-title-sm-bg.png);
+  background-position: center 0;
+  height: 32px;
+  margin-top: 1.4rem;
+}
+
+.sub-title-sm:hover {
+  background-position-y: -32px;
+}
+
+.showcase {
+  grid-area: showcase;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(187.3px, auto);
+}
+
+.showcase .first {
+  background: url(../images/showcase-first.jpg) no-repeat center center/cover;
+}
+
+.showcase .second {
+  background: url(../images/showcase-second.jpg) no-repeat center center/cover;
+}
+
+.showcase .third {
+  background: url(../images/showcase-third.jpg) no-repeat center center/cover;
+}
+
+.showcase .fourth {
+  background: url(../images/showcase-fourth.jpg);
+}
+
+.footer {
+  grid-area: footer;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-auto-flow: column;
+  width: 940px;
+  margin: 0 auto;
+  font-size: 10px;
+  color: var(--dark-color);
+}
+
+.footer a {
+  color: var(--blue-color);
+}
+
+.footer-left .copyright {
+  grid-auto-flow: column;
+  justify-content: start;
+  grid-gap: 0.5rem;
+}
+
+.footer-right {
+  grid-auto-flow: column;
+  justify-items: start;
+  align-items: start;
+}
+
+.footer-right a::after {
+  content: ' ';
+  padding: 0 0.075rem;
+  height: 10px;
+  border-right: 1px solid #ccc;
+}
+
+.footer-right .footer-icon {
+  margin-top: 0.25rem;
+}
+
+.footer-right .footer-icon a::after {
+  display: none;
+}
+
+nav > a:hover {
+  background:
+    linear-gradient(rgba(97, 94, 94, 0.45), rgba(40, 40, 40, 0.45)),
+    url(../images/navbar-bg-image.png);
+}
