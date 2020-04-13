@@ -132,21 +132,19 @@ input:focus {
 
 .sub-link-lg {
   background-image: url(../images/sub-title-lg-bg.png);
-  width: 980px;
   height: 104px;
 }
 
 .sub-title-md {
   background-image: url(../images/sub-title-md-bg.png);
-  background-position: center center;
-  width: 980px;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 82px;
 }
 
 .sub-title-sm {
   background-image: url(../images/sub-title-sm-bg.png);
   background-position: center 0;
-  width: 980px;
   height: 32px;
   margin-top: 1.4rem;
 }
