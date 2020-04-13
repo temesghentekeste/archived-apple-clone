@@ -57,9 +57,11 @@ a {
 }
 
 nav {
-  position: absolute;
+  position: relative;
   top: 64px;
-  left: 260px;
+  z-index: 1;
+  width: 980px;
+  margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(102px, auto));
   grid-auto-flow: column;
   grid-auto-rows: 30px;
@@ -69,7 +71,6 @@ nav {
   background-image: url(../images/navbar-bg-image.png);
   border-radius: 4px;
   border: 1px solid #4c4c4c;
-  width: 980px;
 }
 
 nav > a {
